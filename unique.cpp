@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void unique(int a[100],int n)
+int findunique(int a[100],int n)
 {
 	int i,j,t;
 	for(i=0;i<n;i++)
@@ -13,7 +13,7 @@ void unique(int a[100],int n)
 		}
 		if(t==0)
 		{
-			cout<<"\nThe unique number is "<<a[i];
+			return a[i];
 			break;			
 		}
 	}
@@ -26,5 +26,5 @@ int main()
 	cout<<"Enter array elements\n";
 	for(i=0;i<n;i++)
 		cin>>a[i];
-	unique(a,n);
+	cout<<"The unique number is "<<findunique(a,n);
 }
