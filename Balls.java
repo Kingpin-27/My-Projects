@@ -7,7 +7,7 @@ public class Balls
 	{
 		Blue=Green=Red=Yellow=0;
 	}
-	static void print()
+	static void output()
 	{
 		System.out.println("Red Balls    : "+Red);
 		System.out.println("Green Balls  : "+Green);
@@ -41,7 +41,7 @@ public class Balls
 			else
 				Yellow++;
 		}
-		print();
+		output();
 	}
 	public static void main(String[] args) 
 	{					
