@@ -16,8 +16,10 @@ public class Balls
 	}
 	static void colour(String a)
 	{ 
+		if((Red + Green + Blue + Yellow)==12)
+			System.out.println("Can not add more than 12 balls in bag");
 		if(a=="b"||a=="B")
-			Blue=Blue+1;
+			Blue++;
 		if(a=="g"||a=="G")
 		{	
 			if(Green<3)
@@ -49,9 +51,9 @@ public class Balls
 		colour(input);
 		System.out.print("Do you want to continue adding Balls? ");
 		String decide = s.next();
-		s.close();
 		if(decide=="Y"||decide=="y")
 			main(args);		
+		s.close();
 	}
 
 }
